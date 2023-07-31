@@ -12,7 +12,7 @@ const socketIO = require('socket.io');
 connection();
 
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 
 
 

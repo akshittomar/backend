@@ -4,7 +4,8 @@
   "description": "office-boy is a cloud based web application which stores and retrives data using mongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
   },
   "author": "",
   "license": "ISC",

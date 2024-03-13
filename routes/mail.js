@@ -4,12 +4,12 @@ require('dotenv').config();
 const router = express.Router();
 const nodemailer = require('nodemailer');
 router.put('/sendmail',async(req,res)=>{
-    const PASS = process.env.PASS;
+    const PASS = "xmdn xsvb soto bgrd";
 
 const {mail,subject,description}=req.body;
 console.log("THE REQUESTED EMAIL IS "+mail+" "+subject+" "+description);
 const mailoptions={
-            from:'nodejs961@gmail.com',
+            from:'melroy@shink.app',
             to:mail,
             subject:subject,
             text:description
@@ -18,7 +18,7 @@ const mailoptions={
         const transporter = nodemailer.createTransport({
                     service:'gmail',
                     auth:{
-                        user:'nodejs961@gmail.com',
+                        user:'melroy@shink.app',
                         pass:PASS
                     }
                 })
